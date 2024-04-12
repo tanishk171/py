@@ -1,0 +1,13 @@
+# Dictionary with tuples as keys
+dict_tuples_keys = {('John', 25): 'Male', ('Alice', 30): 'Female'}
+
+# Accessing values using tuple keys
+print("Gender of John (25):", dict_tuples_keys[('John', 25)])
+print("Gender of Alice (30):", dict_tuples_keys[('Alice', 30)])
+
+# Dictionary with tuples as values
+dict_tuples_values = {'Male': ('John', 25), 'Female': ('Alice', 30)}
+
+# Accessing keys using tuple values
+print("Details of Male:", dict_tuples_values['Male'])
+print("Details of Female:", dict_tuples_values['Female'])
