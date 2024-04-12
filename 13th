@@ -1,0 +1,24 @@
+
+1. **User-defined module:**
+# Save this code in a file named mymodule.py
+
+def greet(name):
+    return f"Hello, {name}!"
+
+def add_numbers(a, b):
+    return a + b
+
+2. **Built-in module:**
+
+# This code is in the main program file
+
+import math  # Built-in module
+
+import mymodule  # User-defined module
+
+# Using functions from the built-in math module
+print(f"Square root of 16: {math.sqrt(16)}")
+
+# Using functions from the user-defined module
+print(mymodule.greet("Alice"))
+print(f"Sum of 5 and 7: {mymodule.add_numbers(5, 7)}")
