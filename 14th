@@ -1,0 +1,19 @@
+# Create a dictionary
+my_dict = {
+    'name': 'Alice',
+    'age': 30,
+    'city': 'Wonderland'
+}
+
+# Access dictionary elements
+print("Name:", my_dict['name'])
+print("Age:", my_dict['age'])
+print("City:", my_dict['city'])
+
+# Delete an element from the dictionary
+del my_dict['city']
+print("Dictionary after deleting 'city':", my_dict)
+
+# Update the dictionary
+my_dict.update({'name': 'Bob', 'country': 'USA'})
+print("Updated dictionary:", my_dict)
