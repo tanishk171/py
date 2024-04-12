@@ -1,0 +1,25 @@
+import math
+
+# Method 1: Calculate GCD using a function
+def calculate_gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+# Method 2: Calculate GCD using math.gcd() function
+def calculate_gcd_builtin(a, b):
+    return math.gcd(a, b)
+
+# Accept input from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Calculate GCD using method 1
+gcd_method1 = calculate_gcd(num1, num2)
+
+# Calculate GCD using method 2
+gcd_method2 = calculate_gcd_builtin(num1, num2)
+
+# Display the output
+print("Method 1: GCD of", num1, "and", num2, "is", gcd_method1)
+print("Method 2: GCD of", num1, "and", num2, "is", gcd_method2)
