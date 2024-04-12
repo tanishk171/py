@@ -1,0 +1,15 @@
+
+import math
+
+# Accepting two values from the user
+base = float(input("Enter the base number: "))
+exponent = float(input("Enter the exponent number: "))
+
+# Calculating exponential form using the ** operator
+result1 = base ** exponent
+print("Using ** operator:", result1)
+
+# Calculating exponential form using the math.pow function
+result2 = math.pow(base, exponent)
+print("Using math.pow function:", result2)
+
