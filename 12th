@@ -1,0 +1,17 @@
+# Define Fibonacci module in the same script
+
+def fibonacci(n):
+    """Generate Fibonacci sequence up to the nth term."""
+    fib_sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+
+# Use the Fibonacci module in the same script
+
+# Get the Fibonacci sequence up to the 10th term
+n = 10
+fib_sequence = fibonacci(n)
+print(f"Fibonacci sequence up to {n} terms:", fib_sequence)
