@@ -1,0 +1,24 @@
+# Method 1: Find the maximum number using a custom function
+def find_max_custom(lst):
+    max_num = lst[0]
+    for num in lst:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+# Method 2: Find the maximum number using the built-in max() function
+def find_max_builtin(lst):
+    return max(lst)
+
+# Example list
+numbers = [10, 5, 20, 8, 15]
+
+# Find the maximum number using method 1
+max_custom = find_max_custom(numbers)
+
+# Find the maximum number using method 2
+max_builtin = find_max_builtin(numbers)
+
+# Display the output
+print("Method 1: The largest maximum number in the list is", max_custom)
+print("Method 2: The largest maximum number in the list is", max_builtin)
