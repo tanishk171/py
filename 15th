@@ -1,0 +1,11 @@
+# Create a tuple
+my_tuple = (1, 2, 3, 4, 5)
+print("Initial tuple:", my_tuple)
+
+# Update the tuple by creating a new tuple with updated elements
+updated_tuple = my_tuple + (6, 7)
+print("Updated tuple:", updated_tuple)
+
+# Delete from the tuple by creating a new tuple without the deleted element(s)
+deleted_tuple = updated_tuple[:2] + updated_tuple[3:]  # Deleting element at index 2 (3rd element)
+print("Tuple after deletion:", deleted_tuple)
